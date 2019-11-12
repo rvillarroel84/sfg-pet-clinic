@@ -1,11 +1,11 @@
 package com.rvillarroel.sfgpetclinic.services.map;
 
-import com.rvillarroel.sfgpetclinic.services.CrudService;
+import com.rvillarroel.sfgpetclinic.services.VetService;
 import com.villarroel.sfgpetclinic.model.Vet;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
