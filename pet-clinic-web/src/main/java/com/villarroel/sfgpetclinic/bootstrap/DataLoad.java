@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class DataLoad implements CommandLineRunner {
 
-    private OwnerService ownerService;
-    private VetService vetService;
+    private final OwnerService ownerService;
+    private final VetService vetService;
 
     public DataLoad(OwnerService ownerService, VetService vetService) {
         this.ownerService = ownerService;
