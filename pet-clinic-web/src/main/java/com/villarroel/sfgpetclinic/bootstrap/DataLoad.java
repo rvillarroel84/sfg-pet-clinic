@@ -15,10 +15,10 @@ public class DataLoad implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoad(OwnerService ownerService, VetService vetService) {
-        this.ownerService = ownerService;
-        this.vetService = vetService;
-    }
+//    public DataLoad(OwnerService ownerService, VetService vetService) {
+//        this.ownerService = ownerService;
+//        this.vetService = vetService;
+//    }
 
     public DataLoad() {
         ownerService = new OwnerServiceMap();
