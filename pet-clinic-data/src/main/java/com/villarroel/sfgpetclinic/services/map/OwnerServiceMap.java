@@ -1,7 +1,7 @@
-package com.rvillarroel.sfgpetclinic.services.map;
+package com.villarroel.sfgpetclinic.services.map;
 
-import com.rvillarroel.sfgpetclinic.services.OwnerService;
 import com.villarroel.sfgpetclinic.model.Owner;
+import com.villarroel.sfgpetclinic.services.OwnerService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

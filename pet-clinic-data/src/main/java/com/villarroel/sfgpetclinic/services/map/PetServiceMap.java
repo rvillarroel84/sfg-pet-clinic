@@ -1,13 +1,13 @@
-package com.rvillarroel.sfgpetclinic.services.map;
+package com.villarroel.sfgpetclinic.services.map;
 
-import com.rvillarroel.sfgpetclinic.services.PetService;
 import com.villarroel.sfgpetclinic.model.Pet;
+import com.villarroel.sfgpetclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();

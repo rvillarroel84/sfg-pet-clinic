@@ -1,7 +1,7 @@
-package com.rvillarroel.sfgpetclinic.services.map;
+package com.villarroel.sfgpetclinic.services.map;
 
-import com.rvillarroel.sfgpetclinic.services.VetService;
 import com.villarroel.sfgpetclinic.model.Vet;
+import com.villarroel.sfgpetclinic.services.VetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

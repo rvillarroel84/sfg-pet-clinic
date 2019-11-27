@@ -1,4 +1,4 @@
-package com.rvillarroel.sfgpetclinic.services;
+package com.villarroel.sfgpetclinic.services;
 
 import com.villarroel.sfgpetclinic.model.Owner;
 
