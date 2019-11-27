@@ -4,8 +4,6 @@ import com.villarroel.sfgpetclinic.model.Owner;
 import com.villarroel.sfgpetclinic.model.Vet;
 import com.villarroel.sfgpetclinic.services.OwnerService;
 import com.villarroel.sfgpetclinic.services.VetService;
-import com.villarroel.sfgpetclinic.services.map.OwnerServiceMap;
-import com.villarroel.sfgpetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,16 +13,16 @@ public class DataLoad implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-//    public DataLoad(OwnerService ownerService, VetService vetService) {
-//        this.ownerService = ownerService;
-//        this.vetService = vetService;
-//    }
-
-    public DataLoad() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
-
+    public DataLoad(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
+//    public DataLoad() {
+//        ownerService = new OwnerServiceMap();
+//        vetService = new VetServiceMap();
+//
+//    }
 
 
     @Override
@@ -45,15 +43,15 @@ public class DataLoad implements CommandLineRunner {
 //        System.out.println("Carga de Due;os");
         Vet vet = new Vet();
         vet.setId(1L);
-        vet.setFirstName("Jorge");
-        vet.setLastName("Pum");
+        vet.setFirstName("Seth");
+        vet.setLastName("Godin8");
 
         vetService.save(vet);
 
         Vet vet2 = new Vet();
-        vet2.setId(1L);
+        vet2.setId(2L);
         vet2.setFirstName("Jorge");
-        vet2.setLastName("Pum");
+        vet2.setLastName("Washington");
 
         vetService.save(vet2);
 
