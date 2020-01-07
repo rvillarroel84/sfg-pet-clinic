@@ -3,9 +3,13 @@ package com.villarroel.sfgpetclinic.services.map;
 import com.villarroel.sfgpetclinic.model.PetType;
 import com.villarroel.sfgpetclinic.model.Speciality;
 import com.villarroel.sfgpetclinic.services.SpecialtyService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
+@Profile({"default", "map"})
 public class SpecialtyServiceMap extends AbstractMapService<Speciality, Long> implements SpecialtyService{
     @Override
     public Set<Speciality> findAll() {

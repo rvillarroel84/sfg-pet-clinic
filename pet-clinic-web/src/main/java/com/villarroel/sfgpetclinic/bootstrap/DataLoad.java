@@ -101,11 +101,11 @@ public class DataLoad implements CommandLineRunner {
 
 //        System.out.println(owner3.getLastName());
 
-        for (Owner duendes : ownerService.findAll() ){
-            System.out.println("ID: " + duendes.getId());
-            System.out.println("Primer Nombre: " + duendes.getFirstName());
-            System.out.println("Segundo Nombre: " + duendes.getLastName());
-        }
+//        for (Owner duendes : ownerService.findAll() ){
+//            System.out.println("ID: " + duendes.getId());
+//            System.out.println("Primer Nombre: " + duendes.getFirstName());
+//            System.out.println("Segundo Nombre: " + duendes.getLastName());
+//        }
 
 
 //        System.out.println(owner.getFirstName() + " " + owner.getLastName());
