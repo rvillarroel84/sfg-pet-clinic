@@ -25,13 +25,6 @@ public class DataLoad implements CommandLineRunner {
         this.visitService = visitService;
     }
 
-//    public DataLoad() {
-//        ownerService = new OwnerServiceMap();
-//        vetService = new VetServiceMap();
-//
-//    }
-
-
     @Override
     public void run(String... args){
 
@@ -49,6 +42,9 @@ public class DataLoad implements CommandLineRunner {
         owner.setAddress("492 Changos");
         owner.setCity("Santa Cruz");
         owner.setTelephone("75563350");
+
+        //owner.builder().id(1).firstName("Ronny").telephone("75563350").lastName("Villarroel").build();
+
 
         Pet mikesPet = new Pet();
         mikesPet.setPetType(savedDogType);
@@ -95,24 +91,9 @@ public class DataLoad implements CommandLineRunner {
 
         vetService.save(vet2);
 
-//        System.out.println("Carga de Veterinarios");
-
-//        Owner owner3 = ownerService.findById(1L);
-
-//        System.out.println(owner3.getLastName());
-
-//        for (Owner duendes : ownerService.findAll() ){
-//            System.out.println("ID: " + duendes.getId());
-//            System.out.println("Primer Nombre: " + duendes.getFirstName());
-//            System.out.println("Segundo Nombre: " + duendes.getLastName());
-//        }
+        System.out.println("Loaded Vets");
 
 
-//        System.out.println(owner.getFirstName() + " " + owner.getLastName());
-//        System.out.println(owner2.getFirstName() + " " + owner2.getLastName());
-
-
-//        System.out.println(vet.getLastName());
 
     }
 }
